@@ -1,0 +1,4 @@
+# ignore folder
+/vendor
+# ingore exe
+*.exe
