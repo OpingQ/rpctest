@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package pb;
+
+message MathArgRequest {
+    int64 a = 1;
+    int64 b = 2;
+}
+
+message MathMutliResponse {
+    int64 ab1 = 1;
+    int64 ab2 = 2;
+}
+
+service MathService {
+    rpc MathMutli (MathArgRequest) returns (MathMutliResponse);
+}
