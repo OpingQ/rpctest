@@ -3,6 +3,7 @@ package client
 import (
 	"context"
 	"errors"
+	"fmt"
 	"log"
 	"rpctest/grpccontnet/pb"
 
@@ -17,7 +18,7 @@ func MathMutli(request *pb.MathArgRequest) (*pb.MathMutliResponse, error) {
 	}
 	defer conn.Close()
 	c := pb.NewMathServiceClient(conn)
-
+	fmt.Println("")
 	r, err := c.MathMutli(context.Background(), request)
 	if err != nil {
 		log.Fatal(err)
