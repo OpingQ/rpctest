@@ -1,5 +1,5 @@
 # ignore folder
-/vendor
+/vendor/*
 !vendor/vendor.json
 # ingore Deputy file name
 *.exe
