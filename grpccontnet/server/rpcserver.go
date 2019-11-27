@@ -23,6 +23,7 @@ func StartGRPCServer() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	// 啟動Server
 	reflection.Register(s)
 	if err := s.Serve(lis); err != nil {

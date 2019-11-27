@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	client "rpctest/grpccontnet/clinent"
+	"rpctest/grpccontnet/client"
 	"rpctest/grpccontnet/pb"
 	"rpctest/grpccontnet/server"
 	"rpctest/rpcclient"
@@ -26,4 +26,8 @@ func main() {
 		res, _ := client.MathMutli(&pb.MathArgRequest{A: 8, B: 7})
 		fmt.Println(res)
 	}
+}
+
+func testMain() {
+
 }

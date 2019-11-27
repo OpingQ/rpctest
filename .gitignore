@@ -1,4 +1,5 @@
 # ignore folder
 /vendor
-# ingore exe
+!vendor/vendor.json
+# ingore Deputy file name
 *.exe
