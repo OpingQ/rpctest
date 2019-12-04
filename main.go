@@ -29,5 +29,5 @@ func main() {
 }
 
 func testMain() {
-
+	fmt.Println("測試衝突1")
 }
