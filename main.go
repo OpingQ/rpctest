@@ -30,4 +30,5 @@ func main() {
 
 func testMain() {
 	fmt.Println("測試衝突1")
+	fmt.Println(" testis")
 }
